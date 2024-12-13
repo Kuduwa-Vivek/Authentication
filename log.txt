@@ -1,0 +1,220 @@
+2024-12-14T00:00:42.490+05:30  INFO 631045 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Starting AuthenticationApplication using Java 21.0.4 with PID 631045 (/home/admin1/Downloads/Authentication/target/classes started by admin1 in /home/admin1/Downloads/Authentication)
+2024-12-14T00:00:42.516+05:30  INFO 631045 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T00:00:43.362+05:30  INFO 631045 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T00:00:43.436+05:30  INFO 631045 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2024-12-14T00:00:44.038+05:30  INFO 631045 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-14T00:00:44.055+05:30  INFO 631045 --- [Authenticationserver] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T00:00:44.055+05:30  INFO 631045 --- [Authenticationserver] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-14T00:00:44.112+05:30  INFO 631045 --- [Authenticationserver] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T00:00:44.113+05:30  INFO 631045 --- [Authenticationserver] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1544 ms
+2024-12-14T00:00:44.298+05:30  INFO 631045 --- [Authenticationserver] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T00:00:44.350+05:30  INFO 631045 --- [Authenticationserver] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-14T00:00:44.382+05:30  INFO 631045 --- [Authenticationserver] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-14T00:00:44.686+05:30  INFO 631045 --- [Authenticationserver] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-14T00:00:44.717+05:30  INFO 631045 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T00:00:45.143+05:30  INFO 631045 --- [Authenticationserver] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@177ddd24
+2024-12-14T00:00:45.145+05:30  INFO 631045 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T00:00:45.228+05:30  INFO 631045 --- [Authenticationserver] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.32
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-14T00:00:46.014+05:30  INFO 631045 --- [Authenticationserver] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-14T00:00:46.059+05:30  INFO 631045 --- [Authenticationserver] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:00:46.410+05:30  INFO 631045 --- [Authenticationserver] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-12-14T00:00:46.438+05:30  WARN 631045 --- [Authenticationserver] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T00:00:46.738+05:30 DEBUG 631045 --- [Authenticationserver] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-14T00:00:46.956+05:30  INFO 631045 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-14T00:00:46.966+05:30  INFO 631045 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Started AuthenticationApplication in 5.143 seconds (process running for 5.651)
+2024-12-14T00:00:53.303+05:30  INFO 631045 --- [Authenticationserver] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-14T00:00:53.304+05:30  INFO 631045 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-14T00:00:53.305+05:30  INFO 631045 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-14T00:00:53.331+05:30 DEBUG 631045 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /user/login
+2024-12-14T00:00:53.342+05:30 DEBUG 631045 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /user/login
+2024-12-14T00:00:53.715+05:30  INFO 631045 --- [Authenticationserver] [http-nio-8080-exec-2] c.a.A.controller.UserController          : Successfully
+2024-12-14T00:00:53.716+05:30  WARN 631045 --- [Authenticationserver] [http-nio-8080-exec-2] c.a.A.controller.UserController          : Warning
+2024-12-14T00:00:53.716+05:30 ERROR 631045 --- [Authenticationserver] [http-nio-8080-exec-2] c.a.A.controller.UserController          : Error
+2024-12-14T00:00:53.732+05:30 DEBUG 631045 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-14T00:02:26.785+05:30  INFO 631045 --- [Authenticationserver] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-14T00:02:26.787+05:30  INFO 631045 --- [Authenticationserver] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-14T00:02:26.791+05:30  INFO 631045 --- [Authenticationserver] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:02:26.793+05:30  INFO 631045 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T00:02:26.800+05:30  INFO 631045 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T00:11:44.928+05:30  INFO 632323 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Starting AuthenticationApplication using Java 21.0.4 with PID 632323 (/home/admin1/Downloads/Authentication/target/classes started by admin1 in /home/admin1/Downloads/Authentication)
+2024-12-14T00:11:44.931+05:30  INFO 632323 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T00:11:45.671+05:30  INFO 632323 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T00:11:45.742+05:30  INFO 632323 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-12-14T00:11:46.373+05:30  INFO 632323 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-14T00:11:46.390+05:30  INFO 632323 --- [Authenticationserver] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T00:11:46.391+05:30  INFO 632323 --- [Authenticationserver] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-14T00:11:46.453+05:30  INFO 632323 --- [Authenticationserver] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T00:11:46.454+05:30  INFO 632323 --- [Authenticationserver] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1478 ms
+2024-12-14T00:11:46.650+05:30  INFO 632323 --- [Authenticationserver] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T00:11:46.703+05:30  INFO 632323 --- [Authenticationserver] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-14T00:11:46.738+05:30  INFO 632323 --- [Authenticationserver] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-14T00:11:47.055+05:30  INFO 632323 --- [Authenticationserver] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-14T00:11:47.089+05:30  INFO 632323 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T00:11:47.483+05:30  INFO 632323 --- [Authenticationserver] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43a59289
+2024-12-14T00:11:47.485+05:30  INFO 632323 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T00:11:47.567+05:30  INFO 632323 --- [Authenticationserver] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.32
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-14T00:11:48.366+05:30  INFO 632323 --- [Authenticationserver] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-14T00:11:48.409+05:30  INFO 632323 --- [Authenticationserver] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:11:48.740+05:30  INFO 632323 --- [Authenticationserver] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-12-14T00:11:48.766+05:30  WARN 632323 --- [Authenticationserver] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T00:11:49.093+05:30 DEBUG 632323 --- [Authenticationserver] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-14T00:11:49.336+05:30  INFO 632323 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-14T00:11:49.347+05:30  INFO 632323 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Started AuthenticationApplication in 5.047 seconds (process running for 5.509)
+2024-12-14T00:13:30.313+05:30  INFO 632323 --- [Authenticationserver] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-14T00:13:30.315+05:30  INFO 632323 --- [Authenticationserver] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-14T00:13:30.319+05:30  INFO 632323 --- [Authenticationserver] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:13:30.321+05:30  INFO 632323 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T00:13:30.329+05:30  INFO 632323 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T00:14:09.741+05:30  INFO 632744 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Starting AuthenticationApplication using Java 21.0.4 with PID 632744 (/home/admin1/Downloads/Authentication/target/classes started by admin1 in /home/admin1/Downloads/Authentication)
+2024-12-14T00:14:09.744+05:30  INFO 632744 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T00:14:10.709+05:30  INFO 632744 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T00:14:10.797+05:30  INFO 632744 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2024-12-14T00:14:11.466+05:30  INFO 632744 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-14T00:14:11.482+05:30  INFO 632744 --- [Authenticationserver] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T00:14:11.483+05:30  INFO 632744 --- [Authenticationserver] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-14T00:14:11.550+05:30  INFO 632744 --- [Authenticationserver] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T00:14:11.550+05:30  INFO 632744 --- [Authenticationserver] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1735 ms
+2024-12-14T00:14:11.740+05:30  INFO 632744 --- [Authenticationserver] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T00:14:11.801+05:30  INFO 632744 --- [Authenticationserver] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-14T00:14:11.842+05:30  INFO 632744 --- [Authenticationserver] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-14T00:14:12.151+05:30  INFO 632744 --- [Authenticationserver] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-14T00:14:12.180+05:30  INFO 632744 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T00:14:12.610+05:30  INFO 632744 --- [Authenticationserver] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c544c9
+2024-12-14T00:14:12.613+05:30  INFO 632744 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T00:14:12.715+05:30  INFO 632744 --- [Authenticationserver] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.32
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-14T00:14:13.509+05:30  INFO 632744 --- [Authenticationserver] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-14T00:14:13.552+05:30  INFO 632744 --- [Authenticationserver] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:14:13.929+05:30  INFO 632744 --- [Authenticationserver] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-12-14T00:14:13.960+05:30  WARN 632744 --- [Authenticationserver] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T00:14:14.365+05:30 DEBUG 632744 --- [Authenticationserver] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-14T00:14:14.592+05:30  INFO 632744 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-14T00:14:14.606+05:30  INFO 632744 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Started AuthenticationApplication in 5.512 seconds (process running for 5.983)
+2024-12-14T00:14:31.450+05:30  INFO 632744 --- [Authenticationserver] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-14T00:14:31.451+05:30  INFO 632744 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-14T00:14:31.452+05:30  INFO 632744 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-14T00:14:31.470+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /user/reg
+2024-12-14T00:14:31.480+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /user/reg
+2024-12-14T00:14:31.584+05:30  INFO 632744 --- [Authenticationserver] [http-nio-8080-exec-2] c.a.A.controller.UserController          : User registered successfully: vive
+2024-12-14T00:14:31.850+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-14T00:15:07.699+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /user/reg
+2024-12-14T00:15:07.700+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured POST /user/reg
+2024-12-14T00:15:07.708+05:30  WARN 632744 --- [Authenticationserver] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `com.authentication.Authentication.entity.Role` value (but could if coercion was enabled using `CoercionConfig`)]
+2024-12-14T00:15:07.709+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-14T00:15:07.715+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing POST /error
+2024-12-14T00:15:07.716+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-14T00:15:07.729+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/error?continue to session
+2024-12-14T00:15:07.730+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-12-14T00:15:07.730+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-3] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@b5b9ab5
+2024-12-14T00:16:23.790+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /user/reg
+2024-12-14T00:16:23.790+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured POST /user/reg
+2024-12-14T00:16:23.793+05:30  WARN 632744 --- [Authenticationserver] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.authentication.Authentication.entity.Role` from String "a": not one of the values accepted for Enum class: [USER, ADMIN]]
+2024-12-14T00:16:23.793+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-14T00:16:23.794+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing POST /error
+2024-12-14T00:16:23.794+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-14T00:16:23.795+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/error?continue to session
+2024-12-14T00:16:23.795+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]
+2024-12-14T00:16:23.795+05:30 DEBUG 632744 --- [Authenticationserver] [http-nio-8080-exec-6] s.w.a.DelegatingAuthenticationEntryPoint : No match found. Using default entry point org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint@b5b9ab5
+2024-12-14T00:16:56.661+05:30  INFO 632744 --- [Authenticationserver] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-14T00:16:56.663+05:30  INFO 632744 --- [Authenticationserver] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-14T00:16:56.666+05:30  INFO 632744 --- [Authenticationserver] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:16:56.668+05:30  INFO 632744 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T00:16:56.677+05:30  INFO 632744 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T00:21:33.356+05:30  INFO 633674 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Starting AuthenticationApplication using Java 21.0.4 with PID 633674 (/home/admin1/Downloads/Authentication/target/classes started by admin1 in /home/admin1/Downloads/Authentication)
+2024-12-14T00:21:33.360+05:30  INFO 633674 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T00:21:34.180+05:30  INFO 633674 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T00:21:34.257+05:30  INFO 633674 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 2 JPA repository interfaces.
+2024-12-14T00:21:34.919+05:30  INFO 633674 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-14T00:21:34.937+05:30  INFO 633674 --- [Authenticationserver] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T00:21:34.937+05:30  INFO 633674 --- [Authenticationserver] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-14T00:21:34.999+05:30  INFO 633674 --- [Authenticationserver] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T00:21:35.000+05:30  INFO 633674 --- [Authenticationserver] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1579 ms
+2024-12-14T00:21:35.176+05:30  INFO 633674 --- [Authenticationserver] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T00:21:35.229+05:30  INFO 633674 --- [Authenticationserver] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-14T00:21:35.264+05:30  INFO 633674 --- [Authenticationserver] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-14T00:21:35.600+05:30  INFO 633674 --- [Authenticationserver] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-14T00:21:35.629+05:30  INFO 633674 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T00:21:36.032+05:30  INFO 633674 --- [Authenticationserver] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@175ac243
+2024-12-14T00:21:36.034+05:30  INFO 633674 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T00:21:36.120+05:30  INFO 633674 --- [Authenticationserver] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.32
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-14T00:21:36.944+05:30  INFO 633674 --- [Authenticationserver] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-14T00:21:36.988+05:30  INFO 633674 --- [Authenticationserver] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:21:37.332+05:30  INFO 633674 --- [Authenticationserver] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-12-14T00:21:37.357+05:30  WARN 633674 --- [Authenticationserver] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T00:21:37.663+05:30 DEBUG 633674 --- [Authenticationserver] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-12-14T00:21:37.884+05:30  INFO 633674 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-14T00:21:37.893+05:30  INFO 633674 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Started AuthenticationApplication in 5.186 seconds (process running for 5.641)
+2024-12-14T00:21:50.315+05:30  INFO 633674 --- [Authenticationserver] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-14T00:21:50.315+05:30  INFO 633674 --- [Authenticationserver] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-14T00:21:50.316+05:30  INFO 633674 --- [Authenticationserver] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-14T00:21:50.334+05:30 DEBUG 633674 --- [Authenticationserver] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /user/reg
+2024-12-14T00:21:50.343+05:30 DEBUG 633674 --- [Authenticationserver] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /user/reg
+2024-12-14T00:21:50.438+05:30  INFO 633674 --- [Authenticationserver] [http-nio-8080-exec-1] c.a.A.controller.UserController          : User registered successfully: vive243567890
+2024-12-14T00:21:50.713+05:30 DEBUG 633674 --- [Authenticationserver] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-12-14T00:23:44.482+05:30  INFO 633674 --- [Authenticationserver] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-14T00:23:44.485+05:30  INFO 633674 --- [Authenticationserver] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-14T00:23:44.488+05:30  INFO 633674 --- [Authenticationserver] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T00:23:44.490+05:30  INFO 633674 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T00:23:44.495+05:30  INFO 633674 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-14T01:04:28.701+05:30  INFO 638651 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Starting AuthenticationApplication using Java 21.0.4 with PID 638651 (/home/admin1/Downloads/Authentication/target/classes started by admin1 in /home/admin1/Downloads/Authentication)
+2024-12-14T01:04:28.704+05:30  INFO 638651 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-12-14T01:04:29.410+05:30  INFO 638651 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-14T01:04:29.474+05:30  INFO 638651 --- [Authenticationserver] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2024-12-14T01:04:30.050+05:30  INFO 638651 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-14T01:04:30.066+05:30  INFO 638651 --- [Authenticationserver] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-14T01:04:30.067+05:30  INFO 638651 --- [Authenticationserver] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-14T01:04:30.116+05:30  INFO 638651 --- [Authenticationserver] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-14T01:04:30.117+05:30  INFO 638651 --- [Authenticationserver] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1365 ms
+2024-12-14T01:04:30.295+05:30  INFO 638651 --- [Authenticationserver] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-14T01:04:30.355+05:30  INFO 638651 --- [Authenticationserver] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-14T01:04:30.385+05:30  INFO 638651 --- [Authenticationserver] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-14T01:04:30.670+05:30  INFO 638651 --- [Authenticationserver] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-14T01:04:30.699+05:30  INFO 638651 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-14T01:04:31.091+05:30  INFO 638651 --- [Authenticationserver] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59371066
+2024-12-14T01:04:31.094+05:30  INFO 638651 --- [Authenticationserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-14T01:04:31.167+05:30  INFO 638651 --- [Authenticationserver] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.32
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-14T01:04:31.975+05:30  INFO 638651 --- [Authenticationserver] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-14T01:04:32.027+05:30  INFO 638651 --- [Authenticationserver] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T01:04:32.353+05:30  INFO 638651 --- [Authenticationserver] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2024-12-14T01:04:32.377+05:30  WARN 638651 --- [Authenticationserver] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-14T01:04:32.855+05:30  INFO 638651 --- [Authenticationserver] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-14T01:04:32.864+05:30  INFO 638651 --- [Authenticationserver] [main] c.a.A.AuthenticationApplication          : Started AuthenticationApplication in 4.803 seconds (process running for 5.27)
+2024-12-14T01:04:35.980+05:30  INFO 638651 --- [Authenticationserver] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-14T01:04:35.984+05:30  INFO 638651 --- [Authenticationserver] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-14T01:04:35.987+05:30  INFO 638651 --- [Authenticationserver] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-14T01:04:35.989+05:30  INFO 638651 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-14T01:04:35.996+05:30  INFO 638651 --- [Authenticationserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
