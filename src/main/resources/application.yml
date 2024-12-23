@@ -16,3 +16,13 @@ spring:
 #    properties:
 #      hibernate:
 #        dialect: org.hibernate.dialect.MySQLDialect
+logging:
+  level:
+    root: INFO
+
+    # Default root logging level
+#    org.springframework.security: DEBUG  # Enable DEBUG logging for Spring Security
+#    org.springframework.security.web.access: DEBUG  # Log access control decisions
+#    org.springframework.security.authentication: DEBUG  # Log authentication details
+#    org.springframework.security.oauth2: TRACE  # Trace-level logs for OAuth2
+
