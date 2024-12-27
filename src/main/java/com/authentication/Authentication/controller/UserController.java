@@ -1,7 +1,7 @@
 package com.authentication.Authentication.controller;
 
+import com.authentication.Authentication.dto.LoginRequest;
 import com.authentication.Authentication.entity.User;
-import com.authentication.Authentication.record.LoginRequest;
 import com.authentication.Authentication.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,16 +37,16 @@ public class UserController {
 
   @PostMapping("/login")
   public ResponseEntity<String> login(@RequestBody LoginRequest input) {
-    logger.info("Login attempt for user: {}", input.username());
+    logger.info("Login attempt for user: {}", input.getUsername());
     String user = userService.loginUser(input);
     if (user.equals("Logged In successfully")) {
-      logger.info("Login successful for user: {}", input.username());
+      logger.info("Login successful for user: {}", input.getUsername());
       return ResponseEntity.status(HttpStatus.OK).body(user);
     } else if (user.equals("Invalid Password")) {
-      logger.warn("Login failed for user: {}. Reason: Invalid Password", input.username());
+      logger.warn("Login failed for user: {}. Reason: Invalid Password", input.getPassword());
       return ResponseEntity.status(HttpStatus.NOT_FOUND).body(user);
     } else {
-      logger.warn("Login failed for user: {}. Reason: User not found", input.username());
+      logger.warn("Login failed for user: {}. Reason: User not found", input.getUsername());
       return ResponseEntity.status(HttpStatus.NOT_FOUND).body(user);
     }
   }

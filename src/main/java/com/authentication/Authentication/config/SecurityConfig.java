@@ -8,8 +8,12 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -20,14 +24,14 @@ public class SecurityConfig {
   SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     http.csrf(AbstractHttpConfigurer::disable)
         .authorizeHttpRequests(
-            (authorize) ->
+            authorize ->
                 authorize
-                    .requestMatchers("/user/**", "/getLogging", "/api/books/**")
+                    .requestMatchers("/user/**")
                     .permitAll()
-                    .requestMatchers("/api/books/")
-                    .hasAnyRole("ADMIN", "USER")
                     .requestMatchers("/api/books/**")
-                    .hasRole("ADMIN")
+                    .permitAll()
+                    //                    .requestMatchers("/api/books/**")
+                    //                    .hasRole("ADMIN")
                     .anyRequest()
                     .authenticated())
         .httpBasic(Customizer.withDefaults())
@@ -40,22 +44,15 @@ public class SecurityConfig {
     return new BCryptPasswordEncoder();
   }
 
-  //    @Bean
-  //    @Override
-  //    public UserDetailsService userDetailsService() {
-  //      InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-  //      manager.createUser(
-  //          User.withUsername("admin")
-  //              .password(passwordEncoder().encode("adminpassword"))
-  //              .roles("ADMIN")
-  //              .build());
-  //      manager.createUser(
-  //          User.withUsername("user")
-  //              .password(passwordEncoder().encode("userpassword"))
-  //              .roles("USER")
-  //              .build());
-  //      return manager;
-  //    }
+  @Bean
+  public UserDetailsService userDetailsService() {
+
+    UserDetails admin =
+        User.builder().username("admin").password("{noop}admin").roles("ADMIN").build();
+    UserDetails user = User.builder().username("user").password("user").roles("USER").build();
+
+    return new InMemoryUserDetailsManager(admin, user);
+  }
 
   @Bean
   public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration)

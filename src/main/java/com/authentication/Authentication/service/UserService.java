@@ -1,7 +1,7 @@
 package com.authentication.Authentication.service;
 
+import com.authentication.Authentication.dto.LoginRequest;
 import com.authentication.Authentication.entity.User;
-import com.authentication.Authentication.record.LoginRequest;
 import com.authentication.Authentication.repo.UserRepository;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,8 +43,8 @@ public class UserService implements UserDetailsService {
 
   public String loginUser(LoginRequest loginRequest) {
 
-    String username = loginRequest.username();
-    String password = loginRequest.password();
+    String username = loginRequest.getUsername();
+    String password = loginRequest.getPassword();
     Optional<User> byUsername = userRepository.findByUsername(username);
     if (byUsername.isPresent()) {
       if (passwordEncoder.matches(password, byUsername.get().getPassword())) {

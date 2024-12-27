@@ -5,14 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
 @Entity
-@NoArgsConstructor
-@AllArgsConstructor
 @Table(name = "book")
 public class Book {
 
@@ -44,6 +38,12 @@ public class Book {
   }
 
   public void setAuthor(String author) {
+    this.author = author;
+  }
+
+  public Book(Long id, String title, String author) {
+    this.id = id;
+    this.title = title;
     this.author = author;
   }
 }
